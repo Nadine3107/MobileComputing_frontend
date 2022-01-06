@@ -4,7 +4,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-//import { HomeStackNav, SearchStackNav, ImpressumStackNav } from './stackNavigator';
+
 
 // screens
 import ProfileScreen from '../Screens/Profile/Profile';
@@ -15,6 +15,7 @@ import Home from '../Screens/Home/Home';
 import Profile from '../Screens/Profile/Profile';
 import Cards from '../Screens/Cards/Cards';
 import Impressum from '../Screens/Impressum/Impressum';
+import { HomeStackNav } from './stacknavigator';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -30,7 +31,7 @@ const TabNavigator = () => {
                 <Tab.Screen
                     name="Home"
                     children={() => (
-                       <Home/> 
+                       <HomeStackNav/> 
                     )}
                     options={{
                         tabBarIcon: ({ color, size }) => (
