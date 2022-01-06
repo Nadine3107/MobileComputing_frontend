@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import TabNavigator from './navigation/tabnavigator';
+import Cards from './Screens/Cards/Cards';
+import Home from './Screens/Home/Home';
 import Impressum from './Screens/Impressum/Impressum';
+import Profile from './Screens/Profile/Profile';
 
 export default function App() {
   return (
-  <Impressum/>
+  <TabNavigator/>
   );
 }
 
