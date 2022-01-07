@@ -4,18 +4,8 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-
-
-// screens
-import ProfileScreen from '../Screens/Profile/Profile';
-import ImpressumScreen from '../Screens/Impressum/Impressum';
-
-import { COLORS } from '../Styles/Colors';
-import Home from '../Screens/Home/Home';
-import Profile from '../Screens/Profile/Profile';
-import Cards from '../Screens/Cards/Cards';
-import Impressum from '../Screens/Impressum/Impressum';
-import { HomeStackNav } from './stacknavigator';
+import { CardsStackNav, HomeStackNav, ImpressumStackNav, ProfileStackNav } from './stacknavigator';
+import { COLORS } from '../styles/colors';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -40,9 +30,9 @@ const TabNavigator = () => {
                     }}
                 />
                 <Tab.Screen
-                    name="Profile"
+                    name="Profil"
                     children={() => (
-                       <Profile/> 
+                       <ProfileStackNav/> 
                     )}
                     options={{
                         tabBarIcon: ({ color, size }) => (
@@ -51,9 +41,9 @@ const TabNavigator = () => {
                     }}
                 />
                 <Tab.Screen
-                    name="Cards"
+                    name="Karten"
                     children={() => (
-                       <Cards/> 
+                       <CardsStackNav/> 
                     )}
                     options={{
                         tabBarIcon: ({ color, size }) => (
@@ -64,7 +54,7 @@ const TabNavigator = () => {
                  <Tab.Screen
                     name="Impressum"
                     children={() => (
-                       <Impressum/> 
+                       <ImpressumStackNav/> 
                     )}
                     options={{
                         tabBarIcon: ({ color, size }) => (
@@ -72,8 +62,6 @@ const TabNavigator = () => {
                         )
                     }}
                 />
-
-
             </Tab.Navigator>
         </NavigationContainer>
     )

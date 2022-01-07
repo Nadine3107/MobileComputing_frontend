@@ -9,7 +9,7 @@ const Impressum = () => {
   return (
     <>
       <ScrollView style={[{ paddingBottom: 20 }]}>
-        <View style={{ marginBottom: 10 }}>
+        <View style={{ marginBottom: 10, marginTop: 10}}>
           <Text>Informationspflicht laut § 5 TMG.</Text>
         </View>
         <View style={{ marginBottom: 10 }}>
