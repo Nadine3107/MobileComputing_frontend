@@ -4,7 +4,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { View } from "react-native";
 
 // styles
-import { COLORS } from '../styles/colors';
+import { COLORS } from '../Styles/Colors';
 
 // screens
 import Home from "../Screens/Home/Home";

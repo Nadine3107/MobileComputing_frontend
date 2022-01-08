@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import { CardsStackNav, HomeStackNav, ImpressumStackNav, ProfileStackNav } from './stacknavigator';
-import { COLORS } from '../styles/colors';
+import { COLORS } from '../Styles/Colors';
 
 const Tab = createMaterialBottomTabNavigator();
 
