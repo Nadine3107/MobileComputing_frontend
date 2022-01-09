@@ -8,9 +8,9 @@ import { COLORS } from '../Styles/Colors';
 
 // screens
 import Home from "../Screens/Home/Home";
-import Cards from "../Screens/Cards/Cards";
 import Impressum from "../Screens/Impressum/Impressum";
 import Profile from "../Screens/Profile/Profile";
+import Pinnwand from "../Screens/Pinnwand/Pinnwand";
 
 const navHeaderStyle = {
     headerStyle: {
@@ -44,14 +44,14 @@ const ProfileStackNav = ({ navigation }) => (
     </ProfileStack.Navigator>
 )
 
-const CardsStack = createStackNavigator();
-const CardsStackNav = ({ navigation }) => (
-    <CardsStack.Navigator screenOptions={navHeaderStyle}>
-        <CardsStack.Screen
-            name="Karten"
-            component={Cards}
+const PinnwandStack = createStackNavigator();
+const PinnwandStackNav = ({ navigation }) => (
+    <PinnwandStack.Navigator screenOptions={navHeaderStyle}>
+        <PinnwandStack.Screen
+            name="Pinnwand"
+            component={Pinnwand}
         />
-    </CardsStack.Navigator>
+    </PinnwandStack.Navigator>
 )
 
 const ImpressumStack = createStackNavigator();
@@ -66,7 +66,7 @@ const ImpressumStackNav = ({ navigation }) => (
 
 export {
     HomeStackNav,
-    CardsStackNav,
+    PinnwandStackNav,
     ImpressumStackNav,
     ProfileStackNav
 };

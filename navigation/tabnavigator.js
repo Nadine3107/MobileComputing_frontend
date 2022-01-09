@@ -4,7 +4,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import { CardsStackNav, HomeStackNav, ImpressumStackNav, ProfileStackNav } from './stacknavigator';
+import { PinnwandStackNav, HomeStackNav, ImpressumStackNav, ProfileStackNav } from './stacknavigator';
 import { COLORS } from '../Styles/Colors';
 
 const Tab = createMaterialBottomTabNavigator();
@@ -41,9 +41,9 @@ const TabNavigator = () => {
                     }}
                 />
                 <Tab.Screen
-                    name="Karten"
+                    name="Pinnwand"
                     children={() => (
-                       <CardsStackNav/> 
+                       <PinnwandStackNav/> 
                     )}
                     options={{
                         tabBarIcon: ({ color, size }) => (
