@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { COLORS } from '../Styles/Colors';
 
 const Textfeld = () => {
+    const [text, onChangeText] = React.useState("Text");
     return (
           <SafeAreaView>
               <TextInput
@@ -13,7 +14,7 @@ const Textfeld = () => {
                   placeholder="Schreibe einen Beitrag..."
                   />
           </SafeAreaView>
-    )
+    ) 
   }
 
   const styles = StyleSheet.create({
