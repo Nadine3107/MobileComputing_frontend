@@ -23,13 +23,6 @@ export const TYPO = StyleSheet.create({
         color: COLORS.blackColor,
         marginBottom: 15
     },
-    before_sub_title: {
-        backgroundColor: COLORS.blackColor,
-        width: 30,
-        height: 4,
-        borderRadius: 5,
-        marginBottom: 2
-    },
     paragraph: {
         fontSize: 16,
         color: COLORS.blackColor,

@@ -6,10 +6,10 @@ import { COLORS } from '../../Styles/Colors';
 
 const helpData = [
   {
-    name: 'Hilfsangebote'
+    name: 'Hilfe anbieten'
   },
   {
-    name: 'Hilfsgesuche'
+    name: 'Hilfe suchen'
   }
 ]
 
@@ -22,7 +22,7 @@ const TypFilter = () => {
     let counterNeedHelp = 0;
 
     EintragData.data.map((data) => {
-      if (data.type === "Hilfsgesuche") {
+      if (data.type === "Hilfe suchen") {
         counterNeedHelp++;
       } else {
         counterHelpOffers++
@@ -40,8 +40,8 @@ const TypFilter = () => {
           <Chip>
             <Text>{data.name}</Text>
           </Chip>
-          <Badge style={{ position: 'absolute', top: 0, right: -10, backgroundColor: COLORS.primaryColor }}>
-            {data.name === "Hilfsgesuche" ? countNeedHelp : countHelpOffers}
+          <Badge style={{ position: 'absolute', top: 0, right: -10, backgroundColor: data.name === "Hilfe suchen" ? COLORS.needHelpColor : COLORS.offerHelpColor}}>
+            {data.name === "Hilfe suchen" ? countNeedHelp : countHelpOffers}
           </Badge>
         </View>
       ))}

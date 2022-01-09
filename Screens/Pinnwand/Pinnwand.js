@@ -18,7 +18,6 @@ const Pinnwand = () => {
             <TypFilter/>
             <KategorieFilter />
             <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start' }}>
-                <View style={TYPO.before_sub_title} />
                 <Text style={TYPO.sub_title}>Ergebnisse</Text>
             </View>
             <ErgebnisEintrag />

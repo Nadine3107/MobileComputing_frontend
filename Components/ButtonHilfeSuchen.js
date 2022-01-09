@@ -2,30 +2,31 @@ import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { COLORS } from '../Styles/Colors';
 
-const Button = ({ title, onPress, ...props }) => {
+
+const ButtonHilfeSuchen = ({ title, onPress, ...props }) => {
   return (
-    <Pressable style={styles.button} onPress={onPress} >
-      <Text style={styles.buttonText}>{title}</Text>
+    <Pressable style={styles.buttonHilfeSuchen} onPress={onPress} >
+      <Text style={styles.buttonHilfeSuchenText}>{title}</Text>
     </Pressable>
   )
 }
 
 const styles = StyleSheet.create({
-  button: {
+  buttonHilfeSuchen: {
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 30,
     borderRadius: 5,
-    borderColor: COLORS.primaryColor,
+    borderColor: COLORS.needHelpColor,
     borderWidth: 2,
     marginBottom: 10,
     marginHorizontal: 20
   },
-  buttonText: {
+  buttonHilfeSuchenText: {
     fontSize: 16,
-    color: COLORS.primaryColor,
+    color: COLORS.needHelpColor,
     fontWeight: 'bold'
   }
 })
 
-export default Button;
+export default ButtonHilfeSuchen;

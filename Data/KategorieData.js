@@ -1,24 +1,22 @@
+// Kategorien
 const KategorieData = {
   data: [
     {
       id: 1,
-      name: 'Gesellschaft',
-      icon_name: 'icon_gesellschaft'
+      name: 'Gesellschaft'
     },
     {
       id: 2,
-      name: 'Teilen',
-      icon_name: 'icon_teilen'
+      name: 'Teilen'
     },
     {
       id: 3,
-      name: 'Bürokratisches',
-      icon_name: 'icon_buerokratisches'
-    }, {
+      name: 'Einkaufen'
+    }, 
+    {
       id: 4,
-      name: 'Soziales',
-      icon_name: 'icon_soziales'
-    },
+      name: 'Bürokratisches'
+    }
   ]
 }
 

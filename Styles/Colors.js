@@ -1,6 +1,7 @@
 export const COLORS = {
-    primaryColor: '#276257',
+    primaryColor: '#66ADC8',
     blackColor: '#111111',
     bgColor: '#F8F8F8',
-    needHelpColor: '#b04015'
+    needHelpColor: '#7AB759',
+    offerHelpColor: '#cd853f'
 }
