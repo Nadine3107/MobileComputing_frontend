@@ -1,12 +1,14 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, TextInput } from 'react-native';
+
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Button from '../../Components/Button';
 import { COLORS } from '../../Styles/Colors';
 
 const TextfeldRegistrieren = () => {
     const [text, onChangeText] = React.useState("Text");
     return (
-          <SafeAreaView>
+          <View style={{ marginVertical: 50 }}>
               <TextInput style = {styles.input} placeholder="Vorname"/>
               <TextInput style = {styles.input} placeholder="Nachname"/>
               <TextInput style = {styles.input} placeholder="Straße"/>
@@ -14,18 +16,18 @@ const TextfeldRegistrieren = () => {
               <TextInput style = {styles.input} placeholder="E-Mail Adresse"/>
               <TextInput style = {styles.input} placeholder="Passwort"/>
               <TextInput style = {styles.input} placeholder="Passwort bestätigen"/>
-          </SafeAreaView>
+          </View>
     ) 
   }
 
   const styles = StyleSheet.create({
       input:{
           height: 50,
-          marginVertical: 20,
+          marginVertical: 10,
           marginHorizontal: 20,
           borderWidth: 2,
           padding: 10,
-          borderColor: COLORS.primaryColor,
+          borderColor: COLORS.blackColor,
           borderRadius: 10
       },
   });

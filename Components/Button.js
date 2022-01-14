@@ -3,7 +3,7 @@ import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { COLORS } from '../Styles/Colors';
 
-const Button = ({ title, onPress, type, link, ...props }) => {
+const Button = ({ title, onPress, type, ...props }) => {
   const navigation = useNavigation();
 
   const setButtonColor = () => {
@@ -18,7 +18,7 @@ const Button = ({ title, onPress, type, link, ...props }) => {
   }
 
   return (
-    <Pressable style={[styles.button, {borderColor: setButtonColor()}]} onPress={() => navigation.navigate(`$(link)`)} >
+    <Pressable style={[styles.button, {borderColor: setButtonColor()}]} onPress={onPress} >
       <Text style={[styles.buttonText, {color: setButtonColor()}]}>{title}</Text>
     </Pressable>
   )
