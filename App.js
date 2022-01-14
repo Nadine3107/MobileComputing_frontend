@@ -8,6 +8,7 @@ import Profile from './Screens/Profile/Profile';
 import BeitragErstellen from './Screens/BeitragErstellen/BeitragErstellen';
 import Registrieren from './Screens/Registrieren/Registrieren';
 import Anmelden from './Screens/Anmelden/Anmelden';
+import RegistrierenAnmelden from './Screens/RegistrierenAnmelden/RegistrierenAnmelden';
 
 export default function App() {
   return (
