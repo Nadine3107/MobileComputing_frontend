@@ -6,10 +6,11 @@ import Home from './Screens/Home/Home';
 import Impressum from './Screens/Impressum/Impressum';
 import Profile from './Screens/Profile/Profile';
 import BeitragErstellen from './Screens/BeitragErstellen/BeitragErstellen';
+import Registrieren from './Screens/Registrieren/Registrieren';
 
 export default function App() {
   return (
-  <TabNavigator/>
+  <Registrieren/>
   );
 }
 
