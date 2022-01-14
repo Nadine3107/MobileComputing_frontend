@@ -1,7 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, TextInput } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { COLORS } from '../Styles/Colors';
 
 const Textfeld = () => {
     const [text, onChangeText] = React.useState("Text");
@@ -25,5 +24,4 @@ const Textfeld = () => {
           padding: 10,
       },
   });
-
   export default Textfeld;

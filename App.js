@@ -9,7 +9,7 @@ import BeitragErstellen from './Screens/BeitragErstellen/BeitragErstellen';
 
 export default function App() {
   return (
-  <BeitragErstellen/>
+  <TabNavigator/>
   );
 }
 
