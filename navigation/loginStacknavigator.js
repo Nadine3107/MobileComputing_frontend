@@ -1,18 +1,13 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 
-// styles
-import { COLORS } from '../Styles/Colors';
-
-// screens
+// import der benötigten Screens
 import Anmelden from "../Screens/Anmelden/Anmelden";
 import Registrieren from "../Screens/Registrieren/Registrieren";
 import RegistrierenAnmelden from "../Screens/RegistrierenAnmelden/RegistrierenAnmelden";
-import { NavigationContainer } from "@react-navigation/native";
 
-
+// Navigation für Login Prozess (Anmelden und Registrieren)
 const LoginProcessStack = createStackNavigator();
 const LoginProcessStackNav = ({ navigation }) => (
     <NavigationContainer>

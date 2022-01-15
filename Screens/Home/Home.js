@@ -9,8 +9,8 @@ const Home = () => {
       <ScrollView style={[{ paddingBottom: 20 }]}>
         <View style={{ marginVertical: 20 }}>
           <Button title={'Hilfe suchen'} type={'needHelp'} link={'BeitragErstellen'}/>
-          <Button title={'Hilfe anbieten'} type={'offerHelp'}/>
-          <Button title={'Pinnwand'} type={'primary'}/>
+          <Button title={'Hilfe anbieten'} type={'offerHelp'} link={'BeitragErstellen'}/>
+          <Button title={'Pinnwand'} type={'primary'} link={'Pinnwand'}/>
       </View>
       </ScrollView>
     </>

@@ -1,10 +1,9 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, View, TextInput } from 'react-native';
+import {StyleSheet, View, TextInput } from 'react-native';
 
-import { SafeAreaView } from 'react-native-safe-area-context';
-import Button from '../../Components/Button';
 import { COLORS } from '../../Styles/Colors';
 
+// Textfelder für E-Mail Adresse, Passwort
 const TextfeldAnmelden = () => {
     const [text, onChangeText] = React.useState("Text");
     return (
@@ -15,6 +14,7 @@ const TextfeldAnmelden = () => {
     ) 
   }
 
+  // Design für Textfelder
   const styles = StyleSheet.create({
       input:{
           height: 50,

@@ -4,10 +4,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TouchableHighlight, TouchableNativeFeedback } from "react-native-gesture-handler";
 import { COLORS } from "../Styles/Colors";
 
+// Einträge für Hilfe suchen und Hilfe anbieten 
 const Eintrag = ({ type, description, category, ...props }) => {
   const navigation = useNavigation();
   const [visible, setVisible] = useState(false);
 
+  // bei drücken auf einen Beitrag wird zu den Details des Beitrags navigiert
+  // Anzeige der Beiträge auf der Pinnwand
   return (
     <>
       <TouchableNativeFeedback onPress={() => navigation.navigate('Details', { type: type, description: description, category: category })}>
@@ -24,7 +27,7 @@ const Eintrag = ({ type, description, category, ...props }) => {
   )
 }
 
-
+// Design für die einzelnen Bestandteile eines Beitrags
 const styles = StyleSheet.create({
   Card: {
     backgroundColor: '#ffffff',

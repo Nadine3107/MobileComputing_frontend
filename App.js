@@ -13,7 +13,7 @@ import { LoginProcessStackNav } from './navigation/loginStacknavigator';
 
 export default function App() {
   return (
-  <LoginProcessStackNav/>
+  <BeitragErstellen/>
   );
 }
 

@@ -9,6 +9,8 @@ import { COLORS } from '../Styles/Colors';
 
 const Tab = createMaterialBottomTabNavigator();
 
+// Tabnavigater für untere Menüleiste, um zu den Screens Home, Profil, Pinnwand und Impressum zu navigieren
+// Home ist immer der Anfangsbildschirm
 const TabNavigator = () => {
     return (
         <NavigationContainer>

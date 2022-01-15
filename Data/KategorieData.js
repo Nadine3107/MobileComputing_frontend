@@ -1,4 +1,4 @@
-// Kategorien
+// Kategorien für Pinnwandeinträge
 const KategorieData = {
   data: [
     {

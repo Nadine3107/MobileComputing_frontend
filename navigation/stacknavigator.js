@@ -1,18 +1,15 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { View } from "react-native";
 
-// styles
-import { COLORS } from '../Styles/Colors';
-
-// screens
+// import der benötigten Screens
 import Home from "../Screens/Home/Home";
 import Impressum from "../Screens/Impressum/Impressum";
 import Profile from "../Screens/Profile/Profile";
 import Pinnwand from "../Screens/Pinnwand/Pinnwand";
 import SuchDetails from "../Screens/Pinnwand/SuchDetails";
+import BeitragErstellen from "../Screens/BeitragErstellen/BeitragErstellen";
 
+// Anzeige des entsprechenden Screen-Namens oberhalb der Seite
 const HomeStack = createStackNavigator();
 const HomeStackNav = ({ navigation }) => (
     <HomeStack.Navigator>

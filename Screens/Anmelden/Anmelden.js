@@ -4,6 +4,7 @@ import { ScrollView} from 'react-native-gesture-handler';
 import Button from '../../Components/Button';
 import TextfeldAnmelden from './TextFeldAnmelden';
 
+// Anmeldeseite mit Textfeldern E-mail Adresse, Passwort und Button zum anmelden
 const Anmelden = () => {
   return (
     <>
