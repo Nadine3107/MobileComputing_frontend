@@ -8,7 +8,7 @@ import { COLORS } from '../../Styles/Colors';
 const TextfeldAnmelden = () => {
     const [text, onChangeText] = React.useState("Text");
     return (
-          <View style={{ marginVertical: 50 }}>
+          <View>
               <TextInput style = {styles.input} placeholder="E-Mail Adresse"/>
               <TextInput style = {styles.input} placeholder="Passwort"/>
           </View>

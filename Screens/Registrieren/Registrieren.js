@@ -9,10 +9,14 @@ const Registrieren = () => {
   return (
     <>
       <ScrollView style={[{ paddingBottom: 10 }]}>
-        <View style={{ marginBottom: 10 }}>
+        <View style={{ marginBottom: 10, marginTop:10}}>
           <TextfeldRegistrieren/>
-          <Button title={'2G-Nachweis'}/>
-          <Button title={'Registrieren'} type={'primary'}/>
+          <View style={{marginTop: 10}}>
+            <Button title={'2G-Nachweis'}/>
+          </View>
+          <View style={{marginTop: 20}}>
+            <Button title={'Registrieren'} type={'primary'}/>
+          </View>
         </View>
       </ScrollView>
     </>

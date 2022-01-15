@@ -8,7 +8,7 @@ import { COLORS } from '../../Styles/Colors';
 const TextfeldRegistrieren = () => {
     const [text, onChangeText] = React.useState("Text");
     return (
-          <View style={{ marginVertical: 50 }}>
+          <View>
               <TextInput style = {styles.input} placeholder="Vorname"/>
               <TextInput style = {styles.input} placeholder="Nachname"/>
               <TextInput style = {styles.input} placeholder="Straße"/>
