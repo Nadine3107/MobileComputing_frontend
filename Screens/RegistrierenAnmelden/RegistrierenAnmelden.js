@@ -1,8 +1,7 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import {View} from 'react-native';
+import { ScrollView} from 'react-native-gesture-handler';
 import Button from '../../Components/Button';
-import { COLORS } from '../../Styles/Colors';
 
 const RegistrierenAnmelden = () => {
   return (

@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/core';
 import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text} from 'react-native';
 import { COLORS } from '../Styles/Colors';
 
 const Button = ({ title, onPress, type, link, ...props }) => {
@@ -12,8 +12,11 @@ const Button = ({ title, onPress, type, link, ...props }) => {
     }else if(type == 'offerHelp'){
       return COLORS.offerHelpColor
     }
-    else{
+    else if(type == 'primary'){
       return COLORS.primaryColor
+    }
+    else{
+      return COLORS.blackColor
     }
   }
 
