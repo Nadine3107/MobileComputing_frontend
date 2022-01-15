@@ -9,7 +9,6 @@ const Textfeld = () => {
               <TextInput
                   style = {styles.input}
                   onChangeText={onChangeText}
-                  value={text}
                   placeholder="Schreibe einen Beitrag..."
                   />
           </SafeAreaView>
@@ -18,10 +17,11 @@ const Textfeld = () => {
 
   const styles = StyleSheet.create({
       input:{
-          height: 80,
-          margin: 30,
+          height: 120,
+          marginHorizontal: 20,
           borderWidth: 2,
           padding: 10,
+          borderRadius: 10
       },
   });
   export default Textfeld;

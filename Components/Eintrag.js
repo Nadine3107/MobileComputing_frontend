@@ -10,7 +10,7 @@ const Eintrag = ({ type, description, category, ...props }) => {
 
   return (
     <>
-      <TouchableNativeFeedback onPress={() => navigation.navigate('SearchDetails', { type: type, description: description, category: category })}>
+      <TouchableNativeFeedback onPress={() => navigation.navigate('Details', { type: type, description: description, category: category })}>
         <View style={[styles.Card, { borderLeftColor: type === "Hilfe suchen" ? COLORS.needHelpColor : COLORS.offerHelpColor, borderLeftWidth: 5 }]}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
             <Text style={[styles.card_type, { color: type === "Hilfe suchen" ? COLORS.needHelpColor : COLORS.offerHelpColor }]}>{type}</Text>

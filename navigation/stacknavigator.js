@@ -11,22 +11,11 @@ import Home from "../Screens/Home/Home";
 import Impressum from "../Screens/Impressum/Impressum";
 import Profile from "../Screens/Profile/Profile";
 import Pinnwand from "../Screens/Pinnwand/Pinnwand";
-
-const navHeaderStyle = {
-    headerStyle: {
-        backgroundColor: COLORS.bgColor
-    },
-    headerTintColor: COLORS.primaryColor,
-    headerTitleStyle: {
-        fontSize: 18,
-        fontFamily: 'Rubik-Black',
-    },
-    headerTitleAlign: "center",
-}
+import SuchDetails from "../Screens/Pinnwand/SuchDetails";
 
 const HomeStack = createStackNavigator();
 const HomeStackNav = ({ navigation }) => (
-    <HomeStack.Navigator screenOptions={navHeaderStyle}>
+    <HomeStack.Navigator>
         <HomeStack.Screen
             name="Home"
             component={Home}
@@ -36,7 +25,7 @@ const HomeStackNav = ({ navigation }) => (
 
 const ProfileStack = createStackNavigator();
 const ProfileStackNav = ({ navigation }) => (
-    <ProfileStack.Navigator screenOptions={navHeaderStyle}>
+    <ProfileStack.Navigator>
         <ProfileStack.Screen
             name="Profil"
             component={Profile}
@@ -46,17 +35,21 @@ const ProfileStackNav = ({ navigation }) => (
 
 const PinnwandStack = createStackNavigator();
 const PinnwandStackNav = ({ navigation }) => (
-    <PinnwandStack.Navigator screenOptions={navHeaderStyle}>
+    <PinnwandStack.Navigator>
         <PinnwandStack.Screen
             name="Pinnwand"
             component={Pinnwand}
+        />
+        <PinnwandStack.Screen
+            name="Details"
+            component={SuchDetails}
         />
     </PinnwandStack.Navigator>
 )
 
 const ImpressumStack = createStackNavigator();
 const ImpressumStackNav = ({ navigation }) => (
-    <ImpressumStack.Navigator screenOptions={navHeaderStyle}>
+    <ImpressumStack.Navigator>
         <ImpressumStack.Screen
             name="Impressum"
             component={Impressum}

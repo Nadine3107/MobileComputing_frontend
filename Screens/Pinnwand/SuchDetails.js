@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 // styles
-import globalStyle from '../../styles/globalStyles';
+import globalStyle from '../../Styles/GlobalStyles';
 import { TYPO } from '../../Styles/Typo';
 
 

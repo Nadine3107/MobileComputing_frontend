@@ -20,7 +20,7 @@ const Pinnwand = () => {
             <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'flex-start' }}>
                 <Text style={TYPO.sub_title}>Ergebnisse</Text>
             </View>
-            <ErgebnisEintrag />
+            <ErgebnisEintrag/>
         </ScrollView>
     </>
 )
