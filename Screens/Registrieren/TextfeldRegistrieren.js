@@ -2,7 +2,7 @@ import React from 'react';
 import { Pressable, StyleSheet, Text, View, TextInput } from 'react-native';
 
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Button from '../../Components/Button';
+import Button from '../../Components/LinkButton';
 import { COLORS } from '../../Styles/Colors';
 
 const TextfeldRegistrieren = () => {

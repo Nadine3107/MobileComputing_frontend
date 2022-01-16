@@ -1,19 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import TabNavigator from './navigation/tabnavigator';
-import Pinnwand from './Screens/Pinnwand/Pinnwand';
-import Home from './Screens/Home/Home';
-import Impressum from './Screens/Impressum/Impressum';
-import Profile from './Screens/Profile/Profile';
-import BeitragErstellen from './Screens/BeitragErstellen/BeitragErstellen';
-import Registrieren from './Screens/Registrieren/Registrieren';
-import Anmelden from './Screens/Anmelden/Anmelden';
-import RegistrierenAnmelden from './Screens/RegistrierenAnmelden/RegistrierenAnmelden';
-import { LoginProcessStackNav } from './navigation/loginStacknavigator';
+import NastedNavigator from './navigation/nastedNavigator';
+
+import rootReducer from './Redux/Reducer/rootReducer';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const store = createStore(rootReducer);
 
 export default function App() {
   return (
-  <BeitragErstellen/>
+    <Provider store={store}>
+      <NastedNavigator />
+    </Provider>
   );
 }
 

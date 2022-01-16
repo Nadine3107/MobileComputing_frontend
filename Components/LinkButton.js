@@ -4,7 +4,7 @@ import { Pressable, StyleSheet, Text} from 'react-native';
 import { COLORS } from '../Styles/Colors';
 
 // Button Komponente mit verschiedenen Designs
-const Button = ({ title, onPress, type, link, ...props }) => {
+const LinkButton = ({ title, onPress, type, link, ...props }) => {
   const navigation = useNavigation();
 
   // if-Anweisung für Unterscheidung verschiedener Buttons
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Button;
+export default LinkButton;

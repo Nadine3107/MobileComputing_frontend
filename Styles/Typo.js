@@ -17,7 +17,6 @@ export const TYPO = StyleSheet.create({
         marginBottom: 7
     },
     sub_title: {
-        fontFamily: 'Rubik-Black',
         fontWeight: '500',
         fontSize: 26,
         color: COLORS.blackColor,

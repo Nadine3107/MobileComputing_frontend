@@ -1,21 +1,29 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
-import Button from '../../Components/Button.js';
+import React from "react";
+import { Text, View } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
+import { connect } from "react-redux";
+import LinkButton from "../../Components/LinkButton.js";
 
 // styles
 //import globalStyle from '../../styles/globalStyles';
 
-const Profile = () => {
+const Profile = ({ userData }) => {
   return (
     <>
       <ScrollView style={[{ paddingBottom: 20 }]}>
-        <View style={{ marginBottom: 10 }}>
-          <Button title={'2G-Nachweis'} />
-        </View>
+        <Text>{userData.firstName}</Text>
+        <Text>{userData.lastName}</Text>
+        <Text>{userData.email}</Text>
+        <LinkButton title={"Foto hochladen"} type={"primary"} link={"Camera"} />
       </ScrollView>
     </>
-  )
-}
+  );
+};
 
-export default Profile;
+const mapStateToProps = (state) => {
+  return {
+    userData: state.userData,
+  };
+};
+
+export default connect(mapStateToProps, null)(Profile);
